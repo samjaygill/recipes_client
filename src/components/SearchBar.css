@@ -1,0 +1,26 @@
+.input-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding-left: 10px;
+  background-color: rgba(201, 207, 207, 1);
+  height: 25px;
+
+}
+#search-icon {
+  height: 25px;
+  padding-right: 5px;
+  color: #009c97;
+
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

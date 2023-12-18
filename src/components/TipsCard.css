@@ -1,0 +1,53 @@
+.one-tip-card {
+  display: flex;
+  background: rgba(201, 207, 207, 1);
+  margin: 20px 300px 10px 300px;
+  border-radius: 10px;
+}
+.one-tip-img {
+  height: 300px;
+  border-radius: 50%;
+  margin: 10px 0;
+  border: 2px solid #2a2a2a;
+}
+
+.tip-image-wrapper{
+    flex: 1;
+  margin: 20px 0px 0px 20px;
+  text-align: center;
+}
+
+.tip-wrapper{
+    flex: 2;
+  margin: 20px 20px;
+  padding-left: 10px;
+  text-align: start;
+  font-size: 15px;
+}
+
+.one-tip-description{
+    font-size: 13px;
+
+}
+
+
+@media (max-width: 767px) {
+  .one-tip-card {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+  }
+
+  .one-tip-img{
+    height: 150px;
+  }
+
+
+  .tip-image-wrapper{
+    margin: 10px 0 0 0;
+  }
+  .tip-wrapper{
+    text-align: center;
+  }
+}

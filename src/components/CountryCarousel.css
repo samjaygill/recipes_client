@@ -1,0 +1,68 @@
+.react-responsive-3d-carousel__indicators__item svg {
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.react-responsive-3d-carousel__carousel__list__item__content {
+  display: flex;
+  justify-content: center;
+}
+
+.country-image img {
+  border: none;
+  border-radius: 50%;
+  height: 75%;
+}
+
+.react-responsive-3d-carousel__carousel__list__item {
+  box-shadow: none;
+}
+
+.react-responsive-3d-carousel__carousel__list__item {
+  box-shadow: none;
+}
+
+.react-responsive-3d-carousel__carousel{
+  padding: 2rem 0 0 0 ;
+}
+
+.carousel-element p {
+  position: absolute;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  top: 38%;
+  left: 50%;
+  cursor: pointer;
+}
+
+.carousel-element p:hover {
+  color: #00cfc8;
+}
+
+.carousel-container {
+  width: 70%;
+  margin: 0 auto;
+  z-index: -0;
+}
+.carousel-element {
+  position: relative;
+}
+
+body {
+  background: rgb(0, 177, 190);
+  background: radial-gradient(
+    circle,
+    rgba(0, 177, 190, 1) 0%,
+    rgba(42, 42, 42, 0.9934567577030813) 96%
+  );
+}
+
+@media (max-width: 767px) {
+  .all-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
