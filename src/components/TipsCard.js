@@ -28,7 +28,7 @@ function TipsCard() {
           />
         </div>
         <div className="tip-wrapper">
-          <h4>{tip.kitchen_tips.title}</h4>
+          <h4 className="tip-name">{tip.kitchen_tips.title}</h4>
           <p className="one-tip-description">{tip.kitchen_tips.description}</p>
           <ul>
             {tip.kitchen_tips.steps.map((step, index) => (
