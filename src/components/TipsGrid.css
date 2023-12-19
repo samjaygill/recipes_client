@@ -27,24 +27,39 @@
   height: 180px;
   border: none;
   border-radius: 10px;
-
 }
 p.tip-name {
-    text-transform: uppercase;
-    padding-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 13px;
-  }
-  .tips-description{
-    font-size: 13px;
+  text-transform: uppercase;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 13px;
+}
+.tips-description {
+  font-size: 13px;
   margin-bottom: 2px;
-  }
+}
 
-  @media (max-width: 767px) {
-    .all-tips-container {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 40px;
-    }
+@media (max-width: 767px) {
+  .all-tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 10px 10px;
   }
+  .tips-grid{
+    margin: 0px 0px;
+  }
+  .tips-small-img {
+    height: 150px;
+    width: 150px;
+  }
+  p.tip-name {
+    padding: 10px 0px;
+    font-size: 10px;
+    margin: 0;
+  }
+  p.tips-description{
+    font-size: 9px;
+  }
+}
