@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Favourites.css";
 
-const description_length = 100;
 
 const Favourites = ({ favourites }) => {
 
