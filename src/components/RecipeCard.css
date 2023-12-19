@@ -67,7 +67,7 @@
   }
 
   .one-recipe-card-image{
-    height: 150px;
+    height: 180px;
   }
 
   .bag-button{
@@ -89,5 +89,10 @@
   }
   .rc-recipe-wrapper{
     text-align: center;
+    margin: 0px 10px 10px 10px;
+  }
+  .info{
+    font-size: 11px;
+    margin: 0 0 5px;
   }
 }

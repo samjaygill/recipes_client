@@ -102,9 +102,9 @@ const handleDelete = async () => {
         </div>
         <div className="rc-recipe-wrapper">
           <h4>{recipe.meal.name}</h4>
-          <p>{recipe.meal.description}</p>
+          <p className="info">{recipe.meal.description}</p>
 
-          <p>
+          <p className="info">
             Vegan:{" "}
             {recipe.meal.vegan ? <span>&#10003;</span> : <span>&#10008;</span>}{" "}
             | Vegetarian:{" "}
@@ -114,14 +114,14 @@ const handleDelete = async () => {
               <span>&#10008;</span>
             )}
           </p>
-          <p>
+          <p className="info">
             <b>Preperation time:</b> {recipe.meal.preparation_time} minutes
             <br />
             Cooking time: {recipe.meal.cooking_time} minutes
             <br />
             {recipe.meal.country_of_origin}
           </p>
-          <p>
+          <p className="info">
             <b>Nutrition:</b>
             {""}
             {Object.entries(recipe.meal.nutrition).map(([name, nutrition]) => (
@@ -130,7 +130,7 @@ const handleDelete = async () => {
               </li>
             ))}
           </p>
-          <p>
+          <p className="info">
             <b>Ingredients:</b>{" "}
             {Object.entries(recipe.meal.ingredients).map(
               ([name, ingredients]) => (
@@ -140,7 +140,7 @@ const handleDelete = async () => {
               )
             )}
           </p>
-          <p>
+          <p className="info">
             <b>Instructions:</b>{" "}
             {Object.entries(recipe.meal.method).map(([name, method]) => (
               <li className="method" key={name}>
