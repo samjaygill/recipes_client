@@ -15,11 +15,7 @@
 }
 
 .react-responsive-3d-carousel__carousel__list__item {
-  box-shadow: none;
-}
-
-.react-responsive-3d-carousel__carousel__list__item {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .react-responsive-3d-carousel__carousel{
