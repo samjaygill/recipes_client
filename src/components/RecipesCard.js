@@ -1,14 +1,17 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getRecipe } from "../RecipeService";
+import { deleteRecipe } from "../RecipeService";
 import "./RecipeCard.css";
 import placeHolderImage from "../assets/images/new_recipe2.png";
+import 'font-awesome/css/font-awesome.min.css';
 
 const RecipesCard = ({
   addToFavourite,
   removeFromFavourite,
   addToShoppingBag,
   removeFromShoppingBag,
+  removeRecipe
 }) => {
   const [recipe, setRecipe] = useState(null);
   const { id } = useParams();
@@ -43,6 +46,22 @@ const RecipesCard = ({
     navigate("/shoppinglist");
   };
 
+//   const handleDelete = () => {
+//     deleteRecipe(recipe._id).then(()=>{
+//         removeRecipe(recipe._id);
+//     })
+// }
+
+const handleDelete = async () => {
+  try {
+    await deleteRecipe(recipe._id);
+    removeRecipe(recipe._id);
+    console.log('Recipe deleted successfully');
+  } catch (error) {
+    console.error('Error deleting recipe:', error);
+  }
+};
+
   if (!recipe) return <p>loading...</p>;
 
   return (
@@ -75,6 +94,10 @@ const RecipesCard = ({
             src={recipe.meal.image ? recipe.meal.image : placeHolderImage}
             alt={recipe.meal.name}
           />
+          {recipe.meal.image ? (
+        null
+        ) : <i class="fa fa-trash fa-2x" aria-hidden="true" onClick={handleDelete}></i> }
+        
         </div>
         <div className="rc-recipe-wrapper">
           <h4>{recipe.meal.name}</h4>

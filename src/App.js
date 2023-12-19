@@ -22,7 +22,6 @@ function App() {
   const [favouriteRecipes, setFavouriteRecipes] = useState([]);
   const [shoppingBag, setShoppingBag] = useState([]);
   const [kitchenTips, setKitchenTips] = useState([]);
-
   const [filteredResults, setFilteredResults] = useState([]);
 
   const addRecipe = (submittedRecipe) => {
@@ -104,6 +103,8 @@ function App() {
     }
   };
 
+
+
   const filterShoppingBag = () => {
     const newBag = [];
     if (recipes.length > 0) {
@@ -177,6 +178,11 @@ function App() {
     return randomRecipes.slice(0, 4);
   };
 
+  const removeRecipe = (id) => {
+    const recipesToKeep = recipes.filter(recipe => recipe._id !== id)
+    setRecipes(recipesToKeep);
+  }
+
   return (
     <Router>
       <Header handleSearch={handleSearch} />
@@ -206,6 +212,7 @@ function App() {
                 removeFromFavourite={favouriteRemoved}
                 addToShoppingBag={bagSelected}
                 removeFromShoppingBag={bagRemoved}
+                removeRecipe={removeRecipe}
               />
             }
           />

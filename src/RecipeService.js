@@ -60,6 +60,12 @@ export const postRecipe = (payload) => {
   })
 }
 
+export const deleteRecipe = (id) => {
+  return fetch(baseURL + id, {
+      method: 'DELETE'
+  })
+}
+
 export const updateShoppingBag = (recipe) => {
   console.log("update recipe", recipe);
   let updatedShopBag = { ...recipe };
