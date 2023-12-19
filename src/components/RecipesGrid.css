@@ -9,13 +9,7 @@
   justify-content: center;
 }
 
-@media (max-width: 767px) {
-  .all-recipes-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
-  }
-}
+
 
 .recipe-card {
   background: rgba(201, 207, 207, 1);
@@ -65,4 +59,40 @@ p.recipe-name {
 }
 .recipe-details p {
   margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .all-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .recipies-grid {
+    margin: 0 10px;
+  }
+
+  .recipe-card {
+    padding: 5px;
+  }
+
+  .recipe-name{
+    font-size: 10px;
+  }
+  
+  .recipe-description,
+  .recipe-vegan,
+  .recipe-vegetarian,
+  .recipe-cooktime,
+  .recipe-country{
+    font-size: 8px;
+  }
+
+  .small-img{
+    height: 120px;
+    width: 120px;
+  }
+  .fav-hearts {
+    margin-bottom: 5px;
+  }
 }
