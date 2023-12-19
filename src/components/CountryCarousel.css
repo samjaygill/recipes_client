@@ -60,12 +60,14 @@ body {
 }
 
 @media (max-width: 767px) {
-  .all-recipes-container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 40px;
+  .react-responsive-3d-carousel__arrows svg {
+    width: 5rem;
+    padding: 20px 0;
   }
-  .react-responsive-3d-carousel__carousel{
-    padding: 2rem 0 0 0 ;
+  .country-image {
+    height: 100%;
+  }
+  .carousel-element p {
+    font-size: 15px;
   }
 }

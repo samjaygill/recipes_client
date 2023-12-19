@@ -27,3 +27,8 @@
   width: 30px;
 }
 
+@media (max-width: 767px) {
+.suggestion{
+  font-size: 13px;
+}
+}

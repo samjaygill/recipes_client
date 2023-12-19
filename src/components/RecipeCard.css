@@ -7,6 +7,7 @@
 
 .one-recipe-card-image {
   height: 350px;
+  width: 350px;
   border-radius: 50%;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -68,6 +69,7 @@
 
   .one-recipe-card-image{
     height: 180px;
+    width: 180px;
   }
 
   .bag-button{
