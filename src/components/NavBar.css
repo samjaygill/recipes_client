@@ -82,3 +82,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
+
+@media (max-width: 768px) {
+a.navbar-link {
+  font-size: 13px;
+}
+}
