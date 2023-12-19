@@ -7,10 +7,10 @@ const ShoppingBag = ({ shoppingBag }) => {
     return (
       <Link to={`/recipes/${recipe._id}`} className="recipe-card" key={recipe._id}>
       <div className="shop-card">
-        <p>{recipe.meal.name}</p>
+        <p className="sb-name"><b>{recipe.meal.name}</b></p>
         <ul>
           {recipe.meal.ingredients.map((ingredient, index) => (
-            <li key={index}>{ingredient}</li>
+            <li key={index} className="sb-info">{ingredient}</li>
           ))}
         </ul>
       </div>

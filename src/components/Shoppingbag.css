@@ -9,17 +9,6 @@
   font-size: 13px;
 }
 
-@media (max-width: 767px) {
-  .shop-card {
-    display: block;
-    padding: 12px;
-    width: 100%;
-  }
-  .shop-grid{
-    width: 80%;
-  }
-}
-
 .shop-card {
   background: rgba(201, 207, 207, 1);
   border: none;
@@ -34,4 +23,31 @@
   text-decoration: none;
   color: black;
   width: auto;
+}
+
+.sb-name{
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+@media (max-width: 767px) {
+  .shop-grid {
+    grid-template-rows: repeat(1, 1fr);
+    width: 90%;
+    margin: 10px 20px;
+  }
+  .shop-card {
+    display: block;
+    padding: 10px;
+  }
+  .sb-name{
+    font-size: 12px;
+    margin: 0 0 5px;
+  }
+  .sb-info{
+    font-size: 10px;
+  }
+  ul{
+    margin-bottom: 0px;
+  }
 }
