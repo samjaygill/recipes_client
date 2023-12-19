@@ -56,6 +56,7 @@ const handleDelete = async () => {
   try {
     await deleteRecipe(recipe._id);
     removeRecipe(recipe._id);
+    navigate("/allrecipes");
     console.log('Recipe deleted successfully');
   } catch (error) {
     console.error('Error deleting recipe:', error);
