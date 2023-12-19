@@ -23,7 +23,7 @@
 }
 
 .react-responsive-3d-carousel__carousel{
-  padding: 2rem 0 0 0 ;
+  padding: 4rem 0 0 0 !important;
 }
 
 .carousel-element p {
