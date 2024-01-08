@@ -9,8 +9,8 @@ const ShoppingBag = ({ shoppingBag }) => {
       <div className="shop-card">
         <p className="sb-name"><b>{recipe.meal.name}</b></p>
         <ul>
-          {recipe.meal.ingredients.map((ingredient, index) => (
-            <li key={index} className="sb-info">{ingredient}</li>
+          {recipe.shopping_list.items.map((item, index) => (
+            <li key={index} className="sb-info">{item}</li>
           ))}
         </ul>
       </div>
