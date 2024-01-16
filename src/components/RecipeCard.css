@@ -1,7 +1,7 @@
 .one-recipe-card{
   display:flex;
   background: rgba(201, 207, 207, 1);
-  margin: 20px 300px 10px 300px;
+  margin: 20px 260px 10px 260px;
   border-radius: 10px;
 }
 
@@ -15,13 +15,13 @@
 }
 
 .rc-image-wrapper{
-  flex: 1;
+  flex: 1 40%;
   margin: 20px 0px 0px 20px;
   text-align: center;
 }
 
 .rc-recipe-wrapper{
-  flex: 2;
+  flex: 2 60%;
   margin: 20px 20px;
   padding-left: 10px;
   text-align: start;
@@ -58,6 +58,49 @@
 /* .delete-button{
   height: 20px;
 } */
+@media (max-width: 1500px) {
+  .one-recipe-card{
+    margin: 20px 200px 10px 200px;
+    border-radius: 10px;
+  }
+  .one-recipe-card-image {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media (max-width: 1250px) {
+  .one-recipe-card{
+    margin: 20px 100px 10px 100px;
+    border-radius: 10px;
+  }
+  .one-recipe-card-image {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media (max-width: 1050px) {
+  .one-recipe-card{
+    margin: 20px 50px 10px 50px;
+    border-radius: 10px;
+  }
+  .one-recipe-card-image {
+    height: 250px;
+    width: 250px;
+  }
+  .fav-button {
+    padding: 10px ;
+    font-size: 6px;
+    width: 120px;
+    /* width: 200px; */
+  }
+  
+  .bag-button {
+    padding: 10px;
+    font-size: 6px;
+    width: 120px;
+  }
+}
+
 
 @media (max-width: 767px) {
   .one-recipe-card {
