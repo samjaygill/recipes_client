@@ -8,6 +8,18 @@
   justify-content: center;
 }
 
+.react-responsive-3d-carousel__carousel__list {
+  height: 73%;
+}
+
+.react-responsive-3d-carousel__arrows.left {
+  left: 100px;
+}
+
+.react-responsive-3d-carousel__arrows.right {
+  right: 100px;
+}
+
 .country-image img {
   border: none;
   border-radius: 50%;
@@ -15,6 +27,9 @@
 }
 .carousel{
   box-shadow: none;
+}
+.react-responsive-3d-carousel__carousel {
+  padding: 1rem 0 1rem 0 !important;
 }
 
 .react-responsive-3d-carousel__carousel__list__item {
