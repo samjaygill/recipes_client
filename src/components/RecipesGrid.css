@@ -12,7 +12,7 @@
 .recipe-card {
   background: rgba(201, 207, 207, 1);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 10px 18px;
   font: inherit;
   cursor: pointer;
@@ -37,7 +37,7 @@ p.recipe-name {
   height: 180px;
   width: 180px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .fav-hearts {
@@ -94,5 +94,16 @@ p.recipe-name {
   }
   .fav-hearts {
     margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .all-recipes-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .all-recipes-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -24,3 +24,11 @@ textarea:focus,
 select:focus {
   outline: none;
 }
+
+@media (max-width: 600px) {
+.input-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+}
