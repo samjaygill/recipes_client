@@ -13,11 +13,11 @@
 }
 
 .react-responsive-3d-carousel__arrows.left {
-  left: 100px;
+  left: 100px !important;
 }
 
 .react-responsive-3d-carousel__arrows.right {
-  right: 100px;
+  right: 100px !important;
 }
 
 .country-image img {
@@ -76,10 +76,10 @@ body {
 
 @media (max-width: 880px) {
   .react-responsive-3d-carousel__arrows.left {
-    left: 70px;
+    left: 70px !important;
   }
   .react-responsive-3d-carousel__arrows.right {
-    right: 70px;
+    right: 70px !important;
   }
 }
 
@@ -95,10 +95,10 @@ body {
     font-size: 15px;
   }
   .react-responsive-3d-carousel__arrows.left {
-    left: 0px;
+    left: 0px !important;
   }
   .react-responsive-3d-carousel__arrows.right {
-    right: 0px;
+    right: 0px !important;
   }
   .react-responsive-3d-carousel__carousel {
     padding: 0rem 0 0rem 0 !important;
