@@ -26,12 +26,12 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 770px) {
   .header-image {
-    width: 200px;
+    width: 250px;
   }
 }
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   .header-image {
     width: 250px;
   }
