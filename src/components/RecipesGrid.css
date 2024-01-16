@@ -61,34 +61,32 @@ p.recipe-name {
   margin-bottom: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
   .all-recipes-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   }
-
   .recipies-grid {
-    margin: 0 10px;
+    margin: 0 30px;
   }
 
   .recipe-card {
     padding: 5px;
   }
 
-  .recipe-name{
+  .recipe-name {
     font-size: 10px;
   }
-  
+
   .recipe-description,
   .recipe-vegan,
   .recipe-vegetarian,
   .recipe-cooktime,
-  .recipe-country{
+  .recipe-country {
     font-size: 8px;
   }
 
-  .small-img{
+  .small-img {
     height: 120px;
     width: 120px;
   }
@@ -96,14 +94,29 @@ p.recipe-name {
     margin-bottom: 5px;
   }
 }
-
-@media (min-width: 1024px) {
-  .all-recipes-container {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-@media (min-width: 768px) {
+@media (max-width: 950px) {
   .all-recipes-container {
     grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  }
+  .recipies-grid {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 767px) {
+  .all-recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .recipies-grid {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .small-img {
+    height: 100px;
+    width: 100px;
   }
 }
