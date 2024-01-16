@@ -1,15 +1,13 @@
 .recipies-grid {
-  margin: 0 80px;
+  margin: 0 30px;
 }
 
 .all-recipes-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 80px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
   justify-content: center;
 }
-
-
 
 .recipe-card {
   background: rgba(201, 207, 207, 1);
@@ -28,14 +26,16 @@
 
 p.recipe-name {
   text-transform: uppercase;
-  padding-top: 10px;
-  margin-bottom: 10px;
+  font-weight: bold;
+  padding-top: 5px;
+  margin-bottom: 5px;
   text-align: center;
   font-size: 13px;
 }
 
 .small-img {
   height: 180px;
+  width: 180px;
   border: none;
   border-radius: 10px;
 }

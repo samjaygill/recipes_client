@@ -175,7 +175,7 @@ function App() {
   const getRandomRecipes = () => {
     const randomRecipes = recipes.slice();
     randomRecipes.sort(() => Math.random() - 0.5);
-    return randomRecipes.slice(0, 4);
+    return randomRecipes.slice(0, 5);
   };
 
   const removeRecipe = (id) => {
