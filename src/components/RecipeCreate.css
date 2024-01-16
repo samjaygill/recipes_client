@@ -1,14 +1,14 @@
 .create-container{
   display:flex;
   background: rgba(201, 207, 207, 1);
-  margin: 20px 400px 10px 400px;
+  margin: 20px 25% 10px 25%;
   border-radius: 10px;
   padding: 15px 0px;
 }
 
 #recipe-form {
   margin: 0 auto;
-  width: 60%;
+  width: 70%;
 }
 
 .formWrap {
@@ -69,9 +69,29 @@ label {
   color: black;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+  .create-container{
+    margin: 20px 10% 10px 10%;
+    border-radius: 10px;
+    padding: 15px 0px;
+  }
+
+}
+@media (max-width: 680px) {
   #recipe-form {
-    width: 100%;
+    width: 80%;
+}
+}
+@media (max-width: 1050px) {
+  .one-tip-card {
+    margin: 20px 50px 10px 50px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  #recipe-form {
+    width: 90%;
   }
 
   .create-container{
