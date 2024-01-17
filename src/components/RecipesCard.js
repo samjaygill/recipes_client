@@ -88,13 +88,14 @@ const handleDelete = async () => {
             </button>
           )}
           {/*  */}
-          <br></br>
+          <br/>
 
           <img
             className="one-recipe-card-image"
             src={recipe.meal.image ? recipe.meal.image : placeHolderImage}
             alt={recipe.meal.name}
           />
+          <br/>
           {recipe.meal.image ? (
         null
         ) : <i class="fa fa-trash fa-2x" aria-hidden="true" onClick={handleDelete}></i> }
