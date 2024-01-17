@@ -37,7 +37,6 @@ function App() {
 
   useEffect(() => {
     getKitchenTips().then((tips) => {
-      console.log("Retrieved kitchen tips:", tips);
       setKitchenTips(tips);
     });
   }, []);
@@ -66,14 +65,11 @@ function App() {
     const isRecipeInFavorites = favouriteRecipes.some(
       (favRecipe) => favRecipe.meal.name === itemToAdd.meal.name
     );
-    console.log("itemToAdd in favourite function", itemToAdd);
     if (!isRecipeInFavorites) {
       itemToAdd.meal.favourited = true;
       updateRecipe(itemToAdd);
       let recipesCopy = [...recipes];
       for (let rec of recipesCopy) {
-        console.log("rec.meal.id", rec.id);
-        console.log("itemToAdd.meal.id", itemToAdd.id);
 
         if (rec._id === itemToAdd._id) {
           rec.meal.favourited = true;
@@ -89,7 +85,6 @@ function App() {
       (favRecipe) => favRecipe.meal.name === itemToRemove.meal.name
     );
     if (isRecipeInFavorites) {
-      console.log("item to add", itemToRemove);
       itemToRemove.meal.favourited = false;
       updateRecipe(itemToRemove);
       let recipesCopy = [...recipes];
@@ -121,14 +116,11 @@ function App() {
     const isRecipeInBag = shoppingBag.some(
       (shopBagRecipe) => shopBagRecipe.meal.name === ingToAdd.meal.name
     );
-    console.log("ingToAdd in favourite function", ingToAdd);
     if (!isRecipeInBag) {
       ingToAdd.meal.in_shopping_bag = true;
       updateRecipe(ingToAdd);
       let bagCopy = [...recipes];
       for (let bag of bagCopy) {
-        console.log("rec.meal.id", bag.id);
-        console.log("itemToAdd.meal.id", ingToAdd.id);
 
         if (bag._id === ingToAdd._id) {
           bag.meal.in_shopping_bag = true;
@@ -144,7 +136,6 @@ function App() {
       (shopBagRecipe) => shopBagRecipe.meal.name === ingToRemove.meal.name
     );
     if (isRecipeInBag) {
-      console.log("ing to add", ingToRemove);
       ingToRemove.meal.in_shopping_bag = false;
       updateRecipe(ingToRemove);
       let bagCopy = [...recipes];

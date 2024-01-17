@@ -30,7 +30,7 @@ a.navbar-link:hover {
 .navbar-nav {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 /* toggler button */

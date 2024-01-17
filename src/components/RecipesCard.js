@@ -23,7 +23,6 @@ const RecipesCard = ({
   }, [id]);
 
   const handleButtonClick = () => {
-    console.log("item in recipeCard", recipe);
     addToFavourite(recipe);
     navigate("/favourites");
   };
@@ -35,7 +34,6 @@ const RecipesCard = ({
 
   // shopping bag
   const handleButtonBagClick = () => {
-    console.log("item in shopping bag", recipe);
     addToShoppingBag(recipe);
     navigate("/shoppinglist");
   };
@@ -57,7 +55,6 @@ const handleDelete = async () => {
     await deleteRecipe(recipe._id);
     removeRecipe(recipe._id);
     navigate("/allrecipes");
-    console.log('Recipe deleted successfully');
   } catch (error) {
     console.error('Error deleting recipe:', error);
   }

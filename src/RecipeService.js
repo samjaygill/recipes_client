@@ -35,7 +35,6 @@ export const getRecipesForCountry = (country) => {
 };
 
 export const updateRecipe = (recipe) => {
-  console.log("update recipe", recipe);
   let updatedRecipe = { ...recipe };
   delete updatedRecipe._id;
 
@@ -67,7 +66,6 @@ export const deleteRecipe = (id) => {
 }
 
 export const updateShoppingBag = (recipe) => {
-  console.log("update recipe", recipe);
   let updatedShopBag = { ...recipe };
   delete updatedShopBag._id;
 

@@ -87,7 +87,6 @@ function RecipeCreate({ addRecipe }) {
     };
 
     postRecipe(modifiedData).then((data) => {
-      console.log({ data });
       addRecipe(data);
     });
     setFormData(blankForm);
