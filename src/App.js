@@ -16,6 +16,7 @@ import Cuisine from "./components/Cuisine";
 import Header from "./components/Header";
 import TipsGrid from "./components/TipsGrid";
 import TipsCard from "./components/TipsCard";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
@@ -236,6 +237,7 @@ function App() {
 
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <ScrollToTop smooth/>
       </div>
     </Router>
   );
