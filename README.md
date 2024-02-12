@@ -5,17 +5,17 @@ A client has asked for an app to be created that allows users to:\
 Look for recipes based on ingredients, cuisine, or dietary restrictions. \
 Browse Recipes.\
 Search for recipes based on meal of choice, ingredients or cuisine.\
-Add a recipe to favourites and delete from favourites.\
+Add a recipe to favourites and delete from favourites.
 
 ## Extensions: 
 Allow the user to add ingredients to a shopping list.\
 Allow the user to add a Recipe into the app, and it be saved for all to see.\
-Random Recipes on home page.\
+Random Recipes on home page.
 
 ## Advanced Extensions: 
 Responsive (phone, tablet, laptop etc.).\
 Remove from shopping bag.\
-Have recipe tips where a user can view all or individual.\
+Have recipe tips where a user can view all or individual.
 
 
 # React App
