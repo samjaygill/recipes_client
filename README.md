@@ -2,6 +2,7 @@
 
 ## MVP:
 A client has asked for an app to be created that allows users to:\
+
 Look for recipes based on ingredients, cuisine, or dietary restrictions. \
 Browse Recipes.\
 Search for recipes based on meal of choice, ingredients or cuisine.\
